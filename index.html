@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javaScript" src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="logo aplicacion encriptar" width="50px" height="50px">
+    </header>
+    <main>
+        <section class="section-1">
+            <textarea name="resultado" id="textoDesencriptado" cols="30" rows="10" class="textarea" 
+            placeholder="escriba su texto aqui"></textarea>
+
+            <div class="contenedor-botones">
+                <button type="button" id="botonEncriptado" class="botones">Encriptar</button>
+                <button type="button" id="botonDesencriptado" class="botones">Desencriptar</button>
+                <button type="button" id="botonCopiar" class="botones">Copiar</button>
+            </div>
+        </section>
+        <section class="section-2">
+            <div class="contenedor-imagen">
+                <img src="imagen.png" alt="muñeco" width="300px">
+            </div>    
+            <div class="contenedor-subtitulo">
+                <h3>Escribe el texto que desea encriptar</h3>
+            </div>    
+            <div class="contenedor-parrafo">
+                <input type="text" id="textoEncriptado" placeholder="Escribe el texto que desea encriptar">
+            </div>
+        </section>    
+    </main>
+    <footer>
+        <b>Reto #1 // Encriptado y desencriptador de texto // Simon Franco Guisado</b>
+    </footer>
+</body>
+<script>
+    var btn = document.querySelector("#botonEncriptado");
+    btn.onclick = encriptar;
+    var btn2 = document.querySelector("#botonDesencriptado");
+    btn2.onclick = desencriptar;
+    var btn3 = document.querySelector("#botonCopiar");
+    btn3.onclick = copiar;
+</script>
+</html>
